@@ -6,7 +6,7 @@
 git config --global user.name <yourname>
 git config --global user.email <youremail>
 git config --global credential.helper store #保存配置
-git config --global --list 					        #查看配置
+git config --global --list                  #查看配置
 ```
 
 ` --global `：全局配置，所有仓库生效
@@ -110,8 +110,8 @@ git reset
   #### 回溯
 
   ```shell
-  git reflog					    #查看历史操作
-  git reset --hard <ID>		#使用hard操作前版本号回溯
+  git reflog              #查看历史操作
+  git reset --hard <ID>   #使用hard操作前版本号回溯
   ```
 
 
@@ -119,13 +119,13 @@ git reset
 ### 查看版本差异
 
 ```shell
-git diff				      #比较工作区和暂存区
-git diff HEAD			    #比较工作区与版本库
-git diff --cached		  #比较暂存区和版本库
-git diff <ID1> <ID2>	#比较两个版本
-git diff HEAD~ HEAD		#前一个版本和当前版本
-git diff HEAD~2 HEAD	#前第二个版本和当前版本
-git diff <filename>		#只查看某文件的差异
+git diff              #比较工作区和暂存区
+git diff HEAD         #比较工作区与版本库
+git diff --cached     #比较暂存区和版本库
+git diff <ID1> <ID2>  #比较两个版本
+git diff HEAD~ HEAD   #前一个版本和当前版本
+git diff HEAD~2 HEAD  #前第二个版本和当前版本
+git diff <filename>   #只查看某文件的差异
 ```
 
 
@@ -144,9 +144,9 @@ git add .
 #### 	git rm
 
 ```shell
-git rm <filename>			      #同时删除工作区和暂存区
-git rm --cached <filename>	#保留工作区文件
-git rm -r *					        #删除所有子目录和文件
+git rm <filename>           #同时删除工作区和暂存区
+git rm --cached <filename>  #保留工作区文件
+git rm -r *                 #删除所有子目录和文件
 ```
 
 ​	注意修改完后提交
@@ -178,7 +178,7 @@ git rm -r *					        #删除所有子目录和文件
 
   ```shell
   echo "text" > <filepath>
-  echo "add_text" >> <filepath>	#追加内容
+  echo "add_text" >> <filepath> #追加内容
   ```
 
 - #### 查看文件
@@ -212,9 +212,9 @@ git rm -r *					        #删除所有子目录和文件
 - #### SSH配置
 
   ```shell
-  cd							          #回到根目录
+  cd                        #回到根目录
   cd .ssh
-  ssh-keygen -t rsa -b 4096	#生成SSH密钥
+  ssh-keygen -t rsa -b 4096 #生成SSH密钥
   # -t指示协议，-b指示大小
   ```
 
@@ -230,7 +230,7 @@ git rm -r *					        #删除所有子目录和文件
     git remote add origin <url>
     # git remote add <shortname> <url>
     
-    git remote -v	#查看远程仓库
+    git remote -v #查看远程仓库
     
     git push -u origin main
     # git push -u <shortname> <branch>
