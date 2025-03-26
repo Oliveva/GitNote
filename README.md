@@ -27,9 +27,9 @@ git config --global --list                  #查看配置
 
 - #### git clone
 
-```shell 
-git clone <url>
-```
+  ```shell 
+  git clone <url>
+  ```
 
 ****
 
